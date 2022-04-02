@@ -9,4 +9,5 @@
 import './styles/app.css';
 
 // start the Stimulus application
-import './bootstrap';
+const $ = require('jquery');
+// this "modifies" the jquery module: adding behavior to it

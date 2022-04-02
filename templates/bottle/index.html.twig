@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bottle Glow - Yannis R.{% endblock %}
+
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('bottle') }}
+            {{ parent() }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('bottle') }}
+            {{ parent() }}
+        {% endblock %}
+{% block body %}
+    <section>
+        <div class="neonDiv">
+            <a href="{{ path('homepage') }}" style="color: #FFF;text-decoration: none;">
+                <h1>Glowing bottle only CSS</h1>
+            </a>
+        </div>
+
+        <div class="shadow"></div>
+        <div class="bowl">
+            <div class="liquid"></div>
+        </div>
+    </section>
+{% endblock %}
